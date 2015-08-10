@@ -26,7 +26,7 @@ public class Input {
 		stopRecording();
 	}
 	
-	public static void startRecording(String filename){
+	public static void startRecording(final String filename){
 		try {
 			AudioFormat format = new AudioFormat(
 					AudioFormat.Encoding.PCM_SIGNED, 44100, 16, 2, 4, 44100,
